@@ -17,21 +17,21 @@ public class _01_Groups {
     }
     @Test(groups="Regression")
         void Test2(){
-        System.out.println("Test 2 Regression");
+        System.out.println("Test2 Regression");
     }
     @Test(groups="SmokeTest")
     void Test4(){
-        System.out.println("Test 4 SmokeTest");
+        System.out.println("Test4 SmokeTest");
     }
 
     @Test(groups="SmokeTest")
     void Test6(){
-        System.out.println("Test 6 SmokeTest");
+        System.out.println("Test6 SmokeTest");
     }
 
     @Test
     void Test7(){
-        System.out.println("Test 7 ");
+        System.out.println("Test7 ");
     }
 
 

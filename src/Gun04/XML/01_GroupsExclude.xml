@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit">
+    <test name="test1">
+
+    <groups>
+        <run>
+            <exclude name="SmokeTest"></exclude>
+     <!--exlude ise smoke haricindekiler çalışsın demektir.-->
+
+        </run>
+    </groups>
+
+        <classes>
+            <class name="Gun04._01_Groups"></class>
+        </classes>
+
+    <!-- menuvalidation ve BAseDrivera Groups u parantezle göndermem gerekir.-->
+
+    </test>
+</suite>

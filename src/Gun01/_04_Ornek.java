@@ -24,7 +24,7 @@ public class _04_Ornek extends BaseDriver {
         WebElement loginBtn= driver.findElement(By.cssSelector("input[type='submit']"));
         loginBtn.click();
 
-        Assert.assertEquals(driver.getTitle(),"My Account","Login başarısız"); // LOGINDE OLDUĞUMUZU ASSERTION ETTIK..KONTROL ETTİK
+        Assert.assertEquals(driver.getTitle(),"My Account","Login başarısız"); // LOGINDE OLDUĞUMUZU ASSERTION ETTIK..KONTROL ETTİK===> ACTUAL,EXPECTED,MESSAGE
     }
 
 }

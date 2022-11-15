@@ -42,9 +42,6 @@ public class _06_SubscribeNewsLetter extends BaseDriver {
         WebElement subscribeYes=driver.findElement(yes);
         subscribeYes.click();
 
-        WebElement subscribeNo=driver.findElement(no);
-        subscribeNo.click();
-
         WebElement continueButton=driver.findElement(cont);
         continueButton.click();
 
@@ -57,13 +54,13 @@ public class _06_SubscribeNewsLetter extends BaseDriver {
 
     {
 
-        WebElement newsLetterLink=driver.findElement(By.linkText("Newsletter"));
+        WebElement newsLetterLink=driver.findElement(link);
         newsLetterLink.click();
 
-        WebElement subscribeNo=driver.findElement(By.cssSelector("[type='radio'][value='0']"));
+        WebElement subscribeNo=driver.findElement(no);
         subscribeNo.click();
 
-        WebElement continueButton=driver.findElement(By.cssSelector("[value='Continue']"));
+        WebElement continueButton=driver.findElement(cont);
         continueButton.click();
 
         Tools.successMessageValidation();

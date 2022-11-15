@@ -13,15 +13,15 @@ import org.testng.annotations.BeforeClass;
 import java.time.Duration;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-public class BaseDriver {
+public class BaseDriverChef {
 
     public static WebDriver driver;
     public static WebDriverWait wait;
 
-    @BeforeClass (groups="SmokeTest")
+    @BeforeClass
     public void baslangicIslemleri()
     {
+
         System.out.println("Başlangıç işlemleri");
         //ilk adımda çalışan kod kısmı
         Logger logger= Logger.getLogger(""); // sisteme ait bütün logları üreten objeye/servise ulaştım ""
@@ -48,21 +48,26 @@ public class BaseDriver {
         loginTest();
     }
 
+
     void loginTest()
     {
-        driver.get("https://opencart.abstracta.us/index.php?route=account/login");
+        driver.get("https://www.chefsdeal.com/");
 
         System.out.println("login test");
-        WebElement inputEmail= driver.findElement(By.id("input-email"));
-        inputEmail.sendKeys("espositor666@gmail.com");
+        WebElement Login= driver.findElement(By.cssSelector("div[title='My Account'] a[rel='nofollow noopener'] > b"));
 
-        WebElement password= driver.findElement(By.id("input-password"));
-        password.sendKeys("herseycokguzelolacak");
+        WebElement emailInput=driver.findElement(By.cssSelector("input[name='login[username]']"));
 
-        WebElement loginBtn= driver.findElement(By.cssSelector("input[type='submit']"));
+        emailInput.sendKeys("espositor666@gmail.com");
+
+        WebElement password= driver.findElement(By.cssSelector("input[name='login[password]']"));
+        password.sendKeys("954qa0vV");
+
+        WebElement loginBtn= driver.findElement(By.xpath("//button[@name='send']/span[@innertext='LOGIN']"));
         loginBtn.click();
 
-        Assert.assertEquals(driver.getTitle(),"My Account","Login başarısız");
+        WebElement entryaccept=driver.findElement(By.xpath("//span[text()[normalize-space()='Hello, Johan']]"));
+        Assert.assertEquals(entryaccept.getText(),"Hello, Johan","Login girişi başarısız");
     }
 
     @AfterClass(enabled = true)

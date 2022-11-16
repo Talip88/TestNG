@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit" parallel="tests" thread-count="2">    <!--paralel test için bu satırı ekliyoruz.. thraead count da aynı anda kaç test istediğini yazıosun-->
+
+    <test name="test1">
+        <parameter name="browser" value="firefox"></parameter>
+        <!--parametre sendkeys ile yazacağımız mesajı buraya da girebiliyoruz-->
+        <classes>
+            <class name="Gun05._05_Task2"></class>
+        </classes>
+    </test>
+
+
+    <test name="test2">
+        <parameter name="browser" value="chrome"></parameter>
+        <!--parametre sendkeys ile yazacağımız mesajı buraya da girebiliyoruz-->
+        <classes>
+            <class name="Gun05._05_Task2"></class>
+        </classes>
+    </test>
+
+
+</suite>

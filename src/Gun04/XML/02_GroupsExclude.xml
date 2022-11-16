@@ -14,7 +14,7 @@
             <class name="Gun04._01_Groups"></class>
         </classes>
 
-    <!-- menuvalidation ve BAseDrivera Groups u parantezle göndermem gerekir.-->
+    <!-- menuvalidation ve BaseDrivera Groups u parantezle göndermem gerekir.-->
 
     </test>
 </suite>

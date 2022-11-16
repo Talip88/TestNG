@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 
 public class BaseDriverParameter {
 
-    public static WebDriver driver;
+    public  WebDriver driver;  //PARALEL TESTTE burada static olmamalı.. yoksa aynı anda değil sırayla yapar
     public static WebDriverWait wait;
 
     @BeforeClass

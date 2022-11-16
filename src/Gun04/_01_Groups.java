@@ -4,7 +4,10 @@ import org.testng.annotations.Test;
 
 public class _01_Groups {
 
-    @Test(groups="SmokeTest")
+    @Test(groups="SmokeTest") // //@Test(groups="SmokeTest", "Regression") diye yazılır
+
+        // hem smoke da hem regression da olması gerekseydı nasıl yazılır? sorusunun cevabı yukarıda
+
     void Test1(){System.out.println("Test1 SmokeTest");}
 
     @Test(groups = "Regression")

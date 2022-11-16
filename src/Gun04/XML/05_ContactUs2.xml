@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit">
+
+    <test name="test1">
+
+        <parameter name="mesaj" value="İşte yeni testerlar geliyor"></parameter>
+        <!--parametre sendkeys ile yazacağımız mesajı buraya da girebiliyoruz-->
+        <classes>
+            <class name="Gun04._02_ContactUs"></class>
+        </classes>
+    </test>
+
+
+
+    <test name="test2">
+
+        <parameter name="mesaj" value="Haftaya cucumber işliyoruz"></parameter>
+        <!--parametre sendkeys ile yazacağımız mesajı buraya da girebiliyoruz-->
+        <classes>
+            <class name="Gun04._02_ContactUs"></class>
+        </classes>
+    </test>
+</suite>

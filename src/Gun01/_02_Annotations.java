@@ -13,6 +13,7 @@ public class _02_Annotations {
         @AfterClass       -->   Class ın çalışmasının sonunda çalışacak (driver kapat)
      */
 
+
     @BeforeClass
     void beforeClass(){
         System.out.println("Her class dan ÖNCE çalışacak"); // driver ve diğer test öncesi bütün işlemler

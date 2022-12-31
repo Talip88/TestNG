@@ -21,7 +21,7 @@ public class _03_Enable {
         System.out.println("test 1");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = false)  // test 2 artık görmezden gelinecek....
     void test2()
     {
         System.out.println("test 2");

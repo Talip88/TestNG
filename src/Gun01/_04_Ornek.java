@@ -15,10 +15,13 @@ public class _04_Ornek extends BaseDriver {
         driver.get("https://opencart.abstracta.us/index.php?route=account/login");
 
         System.out.println("login test");
-        WebElement inputEmail= driver.findElement(By.cssSelector("[id='input-email']"));
+
+        WebElement inputEmail= driver.findElement(By.id("input-email"));
+
         inputEmail.sendKeys("espositor666@gmail.com");
 
         WebElement password= driver.findElement(By.id("input-password"));
+
         password.sendKeys("herseycokguzelolacak");
 
         WebElement loginBtn= driver.findElement(By.cssSelector("input[type='submit']"));
